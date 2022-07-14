@@ -1,0 +1,26 @@
+body{
+    background-repeat: repeat ;
+    background-image: url(./images.JPEG);
+    box-sizing: border-box;
+}
+
+
+
+table , td , th {
+    text-align: center;
+
+    }
+    
+@font-face {
+    font-family: 'vazir';
+    src: url(./font/Vazir-Medium.ttf);
+}
+
+    table {
+    background-color: rgb(181, 190, 199);
+    font-family:'vazir' ;}
+    
+
+    th {
+    height: 70px;
+    }
