@@ -6,7 +6,10 @@
   const repass = document.querySelector('#repass')
   const email = document.querySelector('#email');
 
-
+  function Time() {
+    window.location.href = "https://parisa-pk.netlify.app/project";
+  
+  }
   
 form.addEventListener('submit' , function (evn2) {
   evn2.preventDefault();
@@ -18,8 +21,9 @@ form.addEventListener('submit' , function (evn2) {
   }
   else{iziToast.success({
     
-    message: 'با موفقیت ثبت شد!',
+    message: 'وارد حساب کاربری شدید.',
 });
+Time()
 }
 
 
@@ -40,11 +44,9 @@ form.addEventListener('submit' , function (evn2) {
      },
    })
     res.then(function (result) {
-         console.log(result);
          return result.json()
      })
-     .then((function (data) {
-         console.log(data);
+     .then((function () {
          nameInput.value = '' ;
          username.value = '' ;
          email.value = '' ;

@@ -9,7 +9,6 @@ fetch('https://jsonplaceholder.ir/users')
 return result.json()})
     .then(function(data){
 
-        console.log(data);
         table(data)
     });
 function table(users) {

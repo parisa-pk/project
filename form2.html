@@ -431,11 +431,9 @@ Time()}
      },
    })
     res.then(function (result) {
-      console.log(result);
       return result.json()
      })
      .then((function (data) {
-         console.log(data);
          FullName.value = '' ;
          Password.value = '';
      }));
